@@ -65,7 +65,7 @@ namespace aqm1602 {
     //% blockId="表示位置" block="表示位置 X=%x Y=%y"
     //% weight=96 blockGap=8
     export function locate(x: number, y: number): void {
-        writeCommand(0x80 + y*0x40 + x)
+        writeCommand(0x80 + y * 0x40 + x)
     }
     /**
      * write data
@@ -118,7 +118,7 @@ namespace aqm1602 {
         control.waitMicros(20);
         writeCommand(0x73);
         control.waitMicros(20);
-        writeCommand(0x52);
+        writeCommand(0x56);
         control.waitMicros(20);
         writeCommand(0x6C);
         control.waitMicros(20);
@@ -128,7 +128,7 @@ namespace aqm1602 {
         control.waitMicros(20);
         writeCommand(0x0C);
         control.waitMicros(20);
-        kanaShift=0
+        kanaShift = 0
         initFlag = 1
     }
 }
