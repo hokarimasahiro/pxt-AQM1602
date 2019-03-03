@@ -128,6 +128,7 @@ namespace aqm1602 {
         control.waitMicros(20);
         writeCommand(0x0C);
         control.waitMicros(20);
+        kanaShift=0
         initFlag = 1
     }
 }
