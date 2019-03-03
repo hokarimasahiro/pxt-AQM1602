@@ -92,7 +92,7 @@ namespace aqm1602 {
     //% blockId="英小文字" block="英小文字"
     //% weight=80 blockGap=8
     export function shiftAlfa(): string {
-        return "\t"
+        return "\v"
     }
     /**
      * TODO:カナシフトコード
@@ -100,7 +100,7 @@ namespace aqm1602 {
     //% blockId="カタカナ" block="カタカナ"
     //% weight=78 blockGap=8
     export function shiftKana(): string {
-        return "\v"
+        return "\f"
     }
 
     /**
